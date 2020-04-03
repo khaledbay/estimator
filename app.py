@@ -23,6 +23,8 @@ file.close()
 
 #@app.route('/')
 @app.route('/', methods=["GET", "POST"])
+@app.route('/hello_world')
+
 def hello_world():
     if(request.method == "POST"):
         myDict = request.form
