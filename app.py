@@ -21,8 +21,8 @@ file = open('model.pkl', 'rb')
 clf = pickle.load(file)
 file.close()
 
-@app.route('/')
-@app.route('/hello_world', methods=["GET", "POST"])
+#@app.route('/')
+@app.route('/', methods=["GET", "POST"])
 def hello_world():
     if(request.method == "POST"):
         myDict = request.form
