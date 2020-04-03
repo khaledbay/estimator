@@ -23,9 +23,9 @@ file.close()
 
 #@app.route('/')
 @app.route('/', methods=["GET", "POST"])
-@app.route('/hello_world')
+@app.route('/home')
 
-def hello_world():
+def home():
     if(request.method == "POST"):
         myDict = request.form
 
