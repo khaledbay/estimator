@@ -1,0 +1,5 @@
+covid
+Flask
+Werkzeug
+gunicorn
+gevent
