@@ -1,4 +1,3 @@
-covid
 Flask
 Werkzeug
 gunicorn
