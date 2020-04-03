@@ -1,4 +1,4 @@
-from email.mime.text import MIMEText
+#from email.mime.text import MIMEText
 from flask import Flask, render_template, request, url_for, flash
 #from flask_mail import Mail, Message
 import pandas as pd
