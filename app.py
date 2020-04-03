@@ -6,8 +6,14 @@ import pickle
 #import smtplib
 #import smtplib
 
+def create_app():
+  app = Flask(__name__)
+  #Bootstrap(app)
 
-app = Flask(__name__)
+  return app
+
+app = create_app()
+#app = Flask(__name__)
 #mail=Mail(app)
 #app.secret_key = b'_5#y2L"F4Q8z\n\xec]/' # Setting secret key, if you dont while flashing if will show exception.
 
@@ -35,32 +41,6 @@ def hello_world():
         return render_template('show.html', inf=round(infProb * 100))
     return render_template('index.html')
 
-'''@app.route('/contact/', methods=["GET", "POST"])
-def contact_form():
-    if(request.method == "POST"):
-        myDict = request.form
-
-        senderName = myDict['name']
-        senderEmail = myDict['email']
-        senderSubject = myDict['subject']
-        senderMessage = myDict['message']
-        
-        mediatorEmail = 'corona.helpcenter.587@gmail.com'
-        receiverEmail = 'anujvijjan10@gmail.com'
-        port = 587
-        msg = MIMEText(senderMessage)
-
-        msg['Subject'] = senderSubject
-        msg['From'] = senderName + " " + senderEmail
-        msg['To'] = receiverEmail
-
-        with smtplib.SMTP('smtp.gmail.com', port) as server:
-            server.starttls()
-            server.login(mediatorEmail, '123456789Corona')
-            server.sendmail(senderEmail, receiverEmail, msg.as_string())
-            flash("Successfully sent email")
-    return render_template('/contact.html')
-'''
 if __name__ == "__main__":
     app.run()
     
