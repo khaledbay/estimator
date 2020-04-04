@@ -3,4 +3,4 @@ Werkzeug
 gunicorn
 gevent
 panda==0.1.5
-pickle
+pickle-mixin
