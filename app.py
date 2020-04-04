@@ -15,7 +15,7 @@ def create_app():
 app = create_app()
 #app = Flask(__name__)
 #mail=Mail(app)
-#app.secret_key = b'_5#y2L"F4Q8z\n\xec]/' # Setting secret key, if you dont while flashing if will show exception.
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/' # Setting secret key, if you dont while flashing if will show exception.
 
 file = open('model.pkl', 'rb')
 clf = pickle.load(file)
