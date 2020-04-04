@@ -4,3 +4,4 @@ gunicorn
 gevent
 panda==0.1.5
 pickle-mixin
+pandas
