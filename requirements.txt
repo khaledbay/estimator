@@ -1,4 +1,4 @@
 Flask
 Werkzeug
-gunicorn
+gunicorn==20.0.0
 gevent
